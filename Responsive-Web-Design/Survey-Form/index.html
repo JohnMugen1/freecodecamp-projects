@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1 id="title">Tesla inc. Survey Form</h1>
+        <p id="description">Fill this Form with accurate Information</p>
+      </div>
+      <form id="survey-form" action="#" method="POST">
+        <fieldset>
+          <label id="name-label" for="name">Enter Your Full Name:<input id="name" type="text" name="name" placeholder="eg.John Doe" required></label>
+          <label id="email-label" for="email">Enter Your Email:<input id="email" type="email" name="email" placeholder="eg.johndoe123@gmail.com" required></label>
+          <label id="number-label" for="number">Input Your Age:<input id="number" type="number" name="number" placeholder="eg.21" min="18" max="80" required></label>
+           <label id="dropdown-label" for="dropdown">Where Did You Hear About Us:
+             <select id="dropdown" name="dropdown" >
+               <option value="">(Select One)</option>
+               <option value="1">Tesla News</option>
+               <option value="2">Tesla Youtube Channel</option>
+               <option value="3">Twitter(x)</option>
+               <option value="4">Others</option>
+             </select></label>
+        </fieldset>
+        <fieldset>
+          <legend>Which Country Are You From:</legend>
+          <label id="country-label" for="country"><input id="country" type="radio" name="user-country" value="germany" checked>Germany</label>
+          <label id="country-label" for="country"><input id="country" type="radio" name="user-country"  value="russia">Russia</label>
+          <label id="country-label" for="country"><input id="country" type="radio" name="user-country"  value="united-states">United States</label>
+          <label id="country-label" for="country"><input id="country" type="radio" name="user-country" value="china">China</label>
+          <label id="country-label" for="country"><input id="country" type="radio" name="user-country" value="others">Others</label>
+        </fieldset>
+        <fieldset>
+          <legend>Which Is Your Favorite Product From Tesla inc.</legend>
+          <label id="product-label" for="product"><input id="product" type="checkbox" name="product" value="stocks" checked>Stocks</label>
+          <label id="product-label" for="product"><input id="product" type="checkbox" name="product" value="motors">Electric Cars</label>
+          <label id="product-label"  for="product"><input id="product" type="checkbox" name="product" value="space">Space crafts</label>
+          <label id="product-label" for="product"><input id="product" type="checkbox" name="product" value="neural">Neural Networks</label>
+          <label id="bio-label" for="bio">Provide Your Bio:<textarea id="bio" rows="7" cols="40" placeholder="Write Here..."></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit" name="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>

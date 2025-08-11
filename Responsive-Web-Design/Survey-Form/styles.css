@@ -1,0 +1,84 @@
+ body {
+   background-color:#1b1b32;
+ }
+ #title, #description {
+   text-align:center;
+   font-weight:bold;
+ }
+ #title {
+   font-size:34px;
+   margin-top:0;
+ }
+ #description {
+   font-size:23px;
+   font-style:italic;
+ }
+ #name-label, #email-label, #number-label, #dropdown-label, legend, #bio-label {
+   font-size:21px;
+   font-family:serif;
+   font-weight:bold;
+ }
+ #container {
+   min-width:300px;
+   max-width:500px;
+   width:60vw;
+   margin:20px auto;
+   background-color:yellow;
+   color:green;
+   padding:20px;
+   border-radius:20px;
+   border:4px solid red;
+ }
+ #survey-form {
+   color:#000;
+   border-bottom:3px solid #000;
+ }
+ #name, #email, #number, #dropdown, #country-label,#product-label {
+   display:block;
+   width:100%;
+   margin:10px 0;
+   height:2.5em;
+ }
+ #bio {
+   display:block;
+   background:#000;
+   color:#fff;
+   margin:6px auto;
+   border:2px solid yellow;
+   border-radius:5px;
+ }
+
+ ::placeholder {
+   color:blue;
+   font-weight:bold;
+   font-style:italic;
+   font-family:serif;
+   font-size:18px;
+ }
+ #dropdown {
+   color:green;
+   font-weight:bold;
+ }
+ fieldset {
+   border:0;
+   border-bottom:3px solid blue;
+   margin-bottom:12px;
+ }
+ fieldset:last-of-type {
+   border-bottom:0;
+ }
+#country {
+  margin-right:3px;
+}
+#submit {
+  width:100%;
+  border:2px solid green;
+  border-radius:5px;
+  font-size:23px;
+  margin:12px 0;
+  height:2em;
+  background:linear-gradient(yellow, orange);
+}
+#submit:active {
+  background:linear-gradient(orange, yellow);
+}
